@@ -1,0 +1,865 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.homePageImgMenuIconWrapper {
+    width: 100%;
+    display: flex;
+}
+
+.homePageBackgroundImg {
+    height: 50rem;
+    max-height: 100%;
+    width: calc(100% - 4rem);
+    margin: 0;
+    background-color: #5CD7E7;
+    background-image: url(../assets/HomeImg1.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    border-right: 3px solid #FF017E;
+}
+
+.menuIcon {
+    height: 50rem;
+    width: 4rem;
+    background-color: #5CD7E7;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.menuIconLine1,
+.menuIconLine2,
+.menuIconLine3 {
+    height: 3px;
+    background-color: #FF017E;
+    position: relative;
+    z-index: 1;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    top: 40%;
+}
+
+.menuIconLine1 {
+    width: 45px;
+}
+
+.menuIconLine2 {
+    width: 35px;
+}
+
+.menuIconLine3 {
+    width: 45px;
+}
+
+.imageCaptionWrapper {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: #5CD7E7;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.imageCaptionsList {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2mm;
+}
+
+.imageCaption1,
+.imageCaption2,
+.imageCaption3 {
+    animation-name: slideInLeft;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+}
+
+.imageCaption1 {
+    color: #8b08e9;
+}
+
+.imageCaption2 {
+    color: #0723F3;
+}
+
+.imageCaption3 {
+    color: #FF017E;
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(-120%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.campaignIdeasWrapper {
+    height: 60rem;
+    width: 100%;
+    background-color: #FF017E;
+    padding-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.campaignIdeasSection {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campaignIdeasHeading,
+.campaignBenefitsHeading,
+.campaignAdHeading {
+    margin-top: 0rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5mm;
+    word-spacing: 3mm;
+}
+
+.campaignIdeasHeading {
+    color: #fff;
+    text-shadow: -9px -4px #0723F3;
+    font-size: 4rem;
+}
+
+.campaignAdHeading {
+    color: #2F42DC;
+    text-shadow: -7px -1px #fff;
+    padding-top: 2rem;
+}
+
+.campaignBenefitsHeading {
+    height: auto;
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    vertical-align: center;
+    color: #9E04C5;
+    text-shadow: 5px 3px #000;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    font-size: 4rem;
+}
+
+.slideshowImg {
+    display: none;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.slideshowImg {
+    height: 40rem;
+    width: 30rem;
+}
+
+.addInfoBtn {
+    height: 4rem;
+    width: 20rem;
+    background-color: #F4CB3D;
+    color: black;
+    font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    border: 1px solid #F4CB3D;
+    border-radius: 1rem;
+    vertical-align: center;
+    letter-spacing: 0.4mm;
+    cursor: pointer;
+}
+
+.campaignBenefitsSection {
+    position: relative;
+    height: 60rem;
+    width: 100%;
+    background-color: #F2DAFA;
+}
+
+.campaignBenefitsSlideshow {
+    height: 50rem;
+    width: 100%;
+}
+
+.campaignBenefitsSlideshowImg {
+    display: none;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.campaignBenefitsImgDotWrapper {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.campaignBenefitsImgDot1,
+.campaignBenefitsImgDot2,
+.campaignBenefitsImgDot3,
+.campaignBenefitsImgDot4,
+.campaignBenefitsImgDot5,
+.campaignBenefitsImgDot6,
+.campaignBenefitsImgDot7 {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: #A08DCF;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.campaignBenefitsImgArrowIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.showPreviousImagesBtn {
+    background-color: #F2DAFA;
+    color: #9E04C5;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', "sans-serif";
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.campaignAdSection {
+    height: 60rem;
+    width: 100%;
+    background-color: #F4CB3B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campaignAdHeading {
+    margin-top: 0rem;
+    color: #2F42DC;
+    text-shadow: -7px -1px #fff;
+    padding-top: 2rem;
+}
+
+.campaignAdAnimationWrapper {
+    position: relative;
+    z-index: 0;
+    height: 15rem;
+    width: 15rem;
+}
+
+.campaignAdAnimationImg {
+    height: 100%;
+    width: 100%;
+    animation: rotateAnticlockwise infinite linear 1s;
+}
+
+
+@keyframes rotateAnticlockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.campaignImagesWrapper {
+    position: relative;
+    z-index: 1;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.campaignAdImg1 {
+    height: 15rem;
+    width: 15rem;
+    margin-top: 5rem;
+}
+
+.campaignAdImg2 {
+    height: 20rem;
+    width: 25rem;
+    margin-left: -7rem;
+}
+
+.createCampaignSection {
+    height: max-content;
+    width: 100%;
+    background-color: #4700FF;
+    display: flex;
+}
+
+.createCampaignLeftWrapper {
+    height: max-content;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.createCampaignLeftImg {
+    height: 15rem;
+    width: 15rem;
+}
+
+.selectCampaignIconHeading {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.selectCampaignIcon1,
+.selectCampaignIcon2,
+.selectCampaignIcon3,
+.selectCampaignIcon4,
+.selectCampaignIcon5 {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-top: 1rem;
+}
+
+.selectCampaignHeading1,
+.selectCampaignHeading2,
+.selectCampaignHeading3,
+.selectCampaignHeading4,
+.selectCampaignHeading5 {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-left: 1rem;
+    letter-spacing: 0.3mm;
+}
+
+.selectCampaignHeading1 {
+    color: #FFFFFF;
+}
+
+.selectCampaignHeading2,
+.selectCampaignHeading3,
+.selectCampaignHeading4,
+.selectCampaignHeading5 {
+    color: #CFB8FF;
+}
+
+.createCampaignStepOneRightWrapper {
+    display: initial;
+}
+
+.createCampaignStepOneRightWrapper,
+.createCampaignStepTwoRightWrapper,
+.createCampaignStepThreeRightWrapper,
+.createCampaignStepFourRightWrapper {
+    height: max-content;
+    width: 62%;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 1.8rem;
+    margin: 1.3rem 1rem 1rem 1rem;
+}
+
+.createCampaignStepTwoRightWrapper,
+.createCampaignStepThreeRightWrapper,
+.createCampaignStepFourRightWrapper {
+    display: none;
+}
+
+.selectCampaignTypeHeading,
+.selectDataFieldsHeading,
+.selectCampaignDurationHeading,
+.addContactDetailsHeading {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #3C1B9D;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.4mm;
+}
+
+
+.selectTimeForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectTimeHeading {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.showTimeSlotsWrapper {
+    margin-top: 0.5rem;
+    padding: 1rem 4rem 1rem 4rem;
+    background-color: #AA98D4;
+    color: black;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.selectCampaignTypeImages,
+.selectDataFieldsImages {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(12.5rem, 1fr));
+}
+
+.selectCampaignTypeImages {
+    gap: 10px;
+}
+
+.selectDataFieldsImages {
+    gap: 50px;
+}
+
+.selectCampaignTypeImgCaption,
+.selectDataFieldsImgCaption {
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectCampaignTypeImgCaption {
+    height: max-content;
+    width: 12rem;
+    margin: 0rem 1rem 0rem 3rem;
+}
+
+.selectDataFieldsImgCaption {
+    height: 100%;
+    width: 100%;
+}
+
+.selectCampaignTypeImgWrapper,
+.selectDataFieldsImgWrapper {
+    background-color: #AA98D4;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+
+.selectCampaignTypeImgWrapper {
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectDataFieldsImgWrapper {
+    height: 13rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.selectDataFieldsImg {
+    padding: 0rem;
+}
+
+.selectDataFieldsImgCheckboxWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    justify-self: center;
+}
+
+.selectDataFieldsImgCheckbox {
+    margin-left: auto;
+    margin-right: 0.5rem;
+}
+
+.selectDataFieldsImgWrapper input[type="checkbox"] {
+    height: 1.1rem;
+    width: 1.1rem;
+    cursor: pointer;
+}
+
+.selectCampaignTypeImgCaptionTxt,
+.selectDataFieldsImgCaptionTxt {
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.1mm;
+    text-align: center;
+}
+
+.selectCampaignTypeBtnWrapper,
+.selectDataFieldsBtnWrapper,
+.selectCampaignDurationBtnWrapper,
+.selectCampaignContactDetailsBtnWrapper {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.selectCampaignDurationBtnWrapper {
+    margin-top: 4rem;
+}
+
+.selectCampaignTypeBtn,
+.selectDataFieldsBtn,
+.selectCampaignDurationBtn,
+.showPreviousStepOneBtn,
+.showPreviousStepTwoBtn,
+.showPreviousStepThreeBtn,
+.selectCampaignContactDetailsBtn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2mm;
+    cursor: pointer;
+    outline: none;
+}
+
+.selectCampaignTypeBtn,
+.selectDataFieldsBtn,
+.selectCampaignDurationBtn,
+.selectCampaignContactDetailsBtn {
+    font-size: 1.2rem;
+    border: 1px solid #4700FF;
+    background-color: #4700FF;
+    color: #FFFFFF;
+    padding: 0.5rem 4rem 0.5rem 4rem;
+}
+
+.selectCampaignContactDetailsBtn {
+    text-transform: uppercase;
+}
+
+.showPreviousStepOneBtn,
+.showPreviousStepTwoBtn,
+.showPreviousStepThreeBtn {
+    font-size: 1.5rem;
+    color: #6729ee;
+    background-color: #FFFFFF;
+    border: 1px solid transparent;
+    text-decoration: underline;
+    padding: 0.5rem 1rem 0.5rem 4rem;
+}
+
+.contactDetailsWrapper {
+    height: max-content;
+    width: calc(100% - 5rem);
+    display: flex;
+    margin-left: 5rem;
+}
+
+.addContactDetailsForm {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addContactDetailsLable1,
+.addContactDetailsLable2,
+.addContactDetailsLable3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3C1B9D;
+    margin-top: 2rem;
+    letter-spacing: 0.5mm;
+}
+
+.addContactDetailsInput1,
+.addContactDetailsInput2 {
+    width: max-content;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border: 2px solid #3C1B9D;
+}
+
+.addContactDetailsInput1,
+.addContactDetailsInput2,
+.addContactDetailsTxtArea {
+    height: max-content;
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    font-family: 'Poppins', "sans-serif";
+    color: #000;
+    margin-top: 0.5rem;
+}
+
+.addContactDetailsTxtArea {
+    width: 80%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    resize: none;
+    border: 3px solid #3C1B9D;
+}
+
+.createCampaignStepFourImg {
+    height: max-content;
+    width: 50%;
+    align-self: center;
+}
+
+.selectCampaignContactDetailsBtnWrapper {
+    margin-top: 10rem;
+}
+
+.selectCampaignDurationCalendarWrapper {
+    height: max-content;
+    width: 18rem;
+    margin-top: 4rem;
+    background-color: #FFFFFF;
+    border: 1px solid #000;
+    border-radius: 0.5rem;
+}
+
+.calendarMonthYearHeader {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #cac7c7;
+}
+
+.calendarPrevNextMonthIcons {
+    display: flex;
+}
+
+.calendarPrevMonthYearIcon {
+    position: relative;
+    right: 400%;
+}
+
+.calendarNextMonthYearIcon {
+    position: relative;
+    left: 100%;
+}
+
+.calendarPrevMonthYearIcon,
+.calendarNextMonthYearIcon {
+    height: 1.2rem;
+    width: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+}
+
+.calendarPrevMonthYearIcon:hover,
+.calendarNextMonthYearIcon:hover {
+    border: 1px solid #d1cfcf;
+    background-color: #d1cfcf;
+}
+
+.calendarCurrentDate {
+    font-size: 1rem;
+    font-family: 'Poppins', "sans-serif";
+    font-weight: 400;
+    color: #808080;
+    display: inline;
+}
+
+.weekdaysWrapper {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+}
+
+.weekday {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: 'Roboto', "sans-serif";
+    font-weight: 400;
+    color: #000000;
+    letter-spacing: 0.2mm;
+    padding: 0.2rem;
+}
+
+.datesWrapper {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem 0.5rem 0.5rem 0.5rem;
+    margin-top: 0rem;
+}
+
+.datesWrapper li {
+    height: 1rem;
+    width: 1rem;
+    width: calc(100% / 7 - 0.4rem);
+    text-align: center;
+    margin: 0.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.datesWrapper li.active {
+    color: #000;
+}
+
+.datesWrapper li.selected {
+    background-color: #4700FF;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.stepCompletedDoubleCheckIcon {
+    height: 2rem;
+    width: 2rem;
+    margin-top: 2rem;
+    display: none;
+}
+
+.indexPageFooter, .footerCopyrightBottomWrapper {
+    height: max-content;
+    width: 100%;
+    background-color: #0E0E0E;
+}
+
+.indexPageFooter {
+    display: flex;
+}
+
+.footerLogoWrapper, .footerCopyrightBottomWrapper {
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+.indexPageFooterLogo {
+    height: 10rem;
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+.footerSocialMediaLinksDiv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+}
+
+.socialMediaHandlesWrapper {
+    height: 100%;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.footerSocialMediaHandle1,
+.footerSocialMediaHandle2 {
+    font-family: 'Roboto', "sans-serif";
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    letter-spacing: 0.2mm;
+    margin-left: 0.5rem;
+}
+
+.footerAddressWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.footerAddress {
+    font-family: 'Roboto', "sans-serif";
+    font-weight: 400;
+    font-size: 1.3rem;
+    font-style: normal;
+    color: #FFFFFF;
+    letter-spacing: 0.2mm;
+    line-height: 2rem;
+    margin: 0rem 5rem 0rem 0.5rem;
+    animation: increaseFontSize 1s infinite ease-in-out;
+}
+
+@keyframes increaseFontSize {
+    20% {
+        font-size: 1.31rem;
+    }
+}
+
+
+.footerCopyrightBottomWrapper {
+    height: max-content;
+    width: 100%;
+    border-top: 1px solid #FFFFFF;
+    display: flex;
+}
+
+.footerCopyrightText {
+    flex: 1;
+    font-family: 'Roboto', "sans-serif";
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #FFFFFF;
+    letter-spacing: 0.2mm;
+    line-height: 4rem;
+    text-align: center;
+}

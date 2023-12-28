@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1 - vistaar-activatr testing</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+<body>
+    <div class="homePageImgMenuIconWrapper">
+        <div class="homePageBackgroundImg"></div>
+
+        <div class="menuIcon" onclick="navigateHomePageHandler()">
+            <div class="menuIconLine1"></div>
+            <div class="menuIconLine2"></div>
+            <div class="menuIconLine3"></div>
+        </div>
+    </div>
+
+    <section class="imageCaptionWrapper">
+        <ul class="imageCaptionsList">
+            <li class="imageCaption1">Drive Sales</li>
+            <li class="imageCaption2">Grab Attention</li>
+            <li class="imageCaption3">Ingnite Buzz</li>
+            <li class="imageCaption1">Drive Sales</li>
+        </ul>
+    </section>
+
+    <div class="campaignIdeasWrapper">
+
+        <section class="campaignIdeasSection">
+            <h1 class="campaignIdeasHeading">Campaign Ideas</h1>
+
+            <img src="../assets/SlideshowImg1.jpg" alt="SlideshowImg1" class="slideshowImg">
+
+            <img src="../assets/SlideshowImg2.jpg" alt="SlideshowImg2" class="slideshowImg">
+
+            <img src="../assets/SlideshowImg3.jpg" alt="SlideshowImg3" class="slideshowImg">
+
+            <img src="../assets/SlideshowImg4.jpg" alt="SlideshowImg4" class="slideshowImg">
+
+            <img src="../assets/SlideshowImg5.jpg" alt="SlideshowImg5" class="slideshowImg">
+
+            <img src="../assets/SlideshowImg6.jpg" alt="SlideshowImg6" class="slideshowImg">
+
+            <img src="../assets/SlideshowImg7.jpg" alt="SlideshowImg7" class="slideshowImg">
+
+        </section>
+
+        <button class="addInfoBtn" onclick="showCampaignIdeasInfoHandler()">Know More</button>
+    </div>
+
+    <section class="campaignBenefitsSection">
+        <h1 class="campaignBenefitsHeading">Metric Measures</h1>
+
+        <div class="campaignBenefitsSlideshow">
+            <img src="../assets/CampaignBenefitsImg1.png" alt="CampaignBenefitsImg"
+                class="campaignBenefitsSlideshowImg1 campaignBenefitsSlideshowImg">
+
+            <img src="../assets/CampaignBenefitsImg2.png" alt="CampaignBenefitsImg"
+                class="campaignBenefitsSlideshowImg2 campaignBenefitsSlideshowImg">
+
+            <img src="../assets/CampaignBenefitsImg3.png" alt="CampaignBenefitsImg"
+                class="campaignBenefitsSlideshowImg3 campaignBenefitsSlideshowImg">
+
+            <img src="../assets/CampaignBenefitsImg4.png" alt="CampaignBenefitsImg"
+                class="campaignBenefitsSlideshowImg4 campaignBenefitsSlideshowImg">
+
+            <img src="../assets/CampaignBenefitsImg5.png" alt="CampaignBenefitsImg"
+                class="campaignBenefitsSlideshowImg5 campaignBenefitsSlideshowImg">
+
+            <img src="../assets/CampaignBenefitsImg6.png" alt="CampaignBenefitsImg"
+                class="campaignBenefitsSlideshowImg6 campaignBenefitsSlideshowImg">
+
+        </div>
+
+        <div class="campaignBenefitsImgDotWrapper">
+            <span class="campaignBenefitsImgDot1"></span>
+            <span class="campaignBenefitsImgDot2"></span>
+            <span class="campaignBenefitsImgDot3"></span>
+            <span class="campaignBenefitsImgDot4"></span>
+            <span class="campaignBenefitsImgDot5"></span>
+            <span class="campaignBenefitsImgDot6" onclick="updateButtonVisibility()"></span>
+
+            <div class="campaignBenefitsImgArrowIcon">
+                <i class="fa-solid fa-circle-arrow-right" style="font-size: 4rem; cursor: pointer;"
+                    onclick="campaignSlideshowImageHandler('forward')"></i>
+                <button class="showPreviousImagesBtn" onclick="showPreviousImagesHandler('backward')">Go Back</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="campaignAdSection">
+        <h1 class="campaignAdHeading">Create Campaign</h1>
+
+        <div class="campaignAdAnimationWrapper">
+            <img src="../assets/CampaignAdImg3.png" alt="Campaign Ad" class="campaignAdAnimationImg">
+        </div>
+
+        <div class="campaignImagesWrapper">
+            <img src="../assets/CampaignAdImg1.png" class="campaignAdImg1" alt="Campaign Ad">
+
+            <img src="../assets/CampaignAdImg2.png" class="campaignAdImg2" alt="Campaign Ad">
+        </div>
+        </div>
+    </section>
+
+
+    <section class="createCampaignSection">
+
+        <div class="createCampaignLeftWrapper">
+            <img src="../assets/SelectCampaignLeftImg.png" alt="Select Campaign" class="createCampaignLeftImg">
+
+            <div class="selectCampaignIconHeading">
+                <img src="../assets/SelectCampaignIcon1.png" class="selectCampaignIcon1" alt="selectCampaignIcon1">
+
+                <h1 class="selectCampaignHeading1">Select campaign types
+                    <img src="../assets/createCampaignStepCompleteIcon.png" alt="stepCompletedDoubleCheckIcon1"
+                        class="stepCompletedDoubleCheckIcon" id="stepCompletedDoubleCheckIcon1">
+                </h1>
+            </div>
+
+            <div class="selectCampaignIconHeading">
+                <img src="../assets/SelectCampaignIcon2.png" class="selectCampaignIcon2" alt="selectCampaignIcon2">
+                <h1 class="selectCampaignHeading2">Select data fields to be collected
+                    <img src="../assets/createCampaignStepCompleteIcon.png" alt="stepCompletedDoubleCheckIcon2"
+                        class="stepCompletedDoubleCheckIcon" id="stepCompletedDoubleCheckIcon2">
+                </h1>
+            </div>
+
+            <div class="selectCampaignIconHeading">
+                <img src="../assets/SelectCampaignIcon3.png" class="selectCampaignIcon3" alt="selectCampaignIcon3">
+                <h1 class="selectCampaignHeading3">Select Duration of campaign
+                    <img src="../assets/createCampaignStepCompleteIcon.png" alt="stepCompletedDoubleCheckIcon3"
+                        class="stepCompletedDoubleCheckIcon" id="stepCompletedDoubleCheckIcon3">
+                </h1>
+            </div>
+
+            <div class="selectCampaignIconHeading">
+                <img src="../assets/SelectCampaignIcon4.png" class="selectCampaignIcon4" alt="selectCampaignIcon4">
+                <h1 class="selectCampaignHeading4">Contact details
+                    <img src="../assets/createCampaignStepCompleteIcon.png" alt="stepCompletedDoubleCheckIcon4"
+                        class="stepCompletedDoubleCheckIcon" id="stepCompletedDoubleCheckIcon4">
+                </h1>
+            </div>
+
+            <div class="selectCampaignIconHeading">
+                <img src="../assets/SelectCampaignIcon5.png" class="selectCampaignIcon5" alt="selectCampaignIcon5">
+                <h1 class="selectCampaignHeading5">Completed
+                </h1>
+            </div>
+        </div>
+
+
+        <div class="createCampaignStepOneRightWrapper" id="createCampaignStepOneWrapper">
+            <h1 class="selectCampaignTypeHeading">Select Campaign Type</h1>
+
+            <div class="selectCampaignTypeImages">
+                <div class="selectCampaignTypeImgCaption">
+                    <figure class="selectCampaignTypeImgWrapper">
+                        <img src="../assets/SelectCampaignImg1.png" alt="" class="selectCampaignTypeImg">
+                    </figure>
+                    <figcaption class="selectCampaignTypeImgCaptionTxt">Pictivatr</figcaption>
+                </div>
+
+
+                <div class="selectCampaignTypeImgCaption">
+                    <figure class="selectCampaignTypeImgWrapper">
+                        <img src="../assets/SelectCampaignImg2.png" alt="" class="selectCampaignTypeImg">
+                    </figure>
+                    <figcaption class="selectCampaignTypeImgCaptionTxt">Pledge</figcaption>
+                </div>
+
+
+                <div class="selectCampaignTypeImgCaption">
+                    <figure class="selectCampaignTypeImgWrapper">
+                        <img src="../assets/SelectCampaignImg3.png" alt="" class="selectCampaignTypeImg">
+                    </figure>
+                    <figcaption class="selectCampaignTypeImgCaptionTxt">Survey</figcaption>
+                </div>
+
+                <div class="selectCampaignTypeImgCaption">
+                    <figure class="selectCampaignTypeImgWrapper">
+                        <img src="../assets/SelectCampaignImg4.png" alt="" class="selectCampaignTypeImg">
+                    </figure>
+                    <figcaption class="selectCampaignTypeImgCaptionTxt">Quiz</figcaption>
+                </div>
+
+                <div class="selectCampaignTypeImgCaption">
+                    <figure class="selectCampaignTypeImgWrapper">
+                        <img src="../assets/SelectCampaignImg5.png" alt="" class="selectCampaignTypeImg">
+                    </figure>
+                    <figcaption class="selectCampaignTypeImgCaptionTxt">Video based Quiz</figcaption>
+                </div>
+
+                <div class="selectCampaignTypeImgCaption">
+                    <figure class="selectCampaignTypeImgWrapper">
+                        <img src="../assets/SelectCampaignImg6.png" alt="" class="selectCampaignTypeImg">
+                    </figure>
+                    <figcaption class="selectCampaignTypeImgCaptionTxt">Gamification</figcaption>
+                </div>
+
+                <div class="selectCampaignTypeImgCaption">
+                    <figure class="selectCampaignTypeImgWrapper">
+                        <img src="../assets/SelectCampaignImg7.png" alt="SelectCampaignImg7" class="selectCampaignTypeImg">
+                    </figure>
+                    <figcaption class="selectCampaignTypeImgCaptionTxt">Educational Ideas</figcaption>
+                </div>
+
+            </div>
+
+            <div class="selectCampaignTypeBtnWrapper">
+                <button class="selectCampaignTypeBtn" id="showStepTwoWrapperBtn"
+                    onclick="showCampaignStepTwoHandler()">Next</button>
+            </div>
+        </div>
+
+        <div class="createCampaignStepTwoRightWrapper" id="createCampaignStepTwoWrapper">
+
+            <h1 class="selectDataFieldsHeading">Select Data Fields To Be Collected</h1>
+
+            <div class="selectDataFieldsImages">
+                <div class="selectDataFieldsImgCaption">
+                    <figure class="selectDataFieldsImgWrapper">
+                        <input type="checkbox" class="selectDataFieldsImgCheckbox" id="selectDataFieldsImgCheckBoxOne">
+                        <img src="../assets/SelectDataFieldsImg1.png" alt="SelectDataFieldsImg1"
+                            class="selectDataFieldsImg">
+                    </figure>
+                    <figcaption class="selectDataFieldsImgCaptionTxt">Impression</figcaption>
+                </div>
+
+                <div class="selectDataFieldsImgCaption">
+                    <figure class="selectDataFieldsImgWrapper">
+                        <input type="checkbox" class="selectDataFieldsImgCheckbox" id="selectDataFieldsImgCheckBoxTwo">
+                        <img src="../assets/SelectDataFieldsImg2.png" alt="SelectDataFieldsImg2"
+                            class="selectDataFieldsImg">
+                    </figure>
+                    <figcaption class="selectDataFieldsImgCaptionTxt">Engagement</figcaption>
+                </div>
+
+                <div class="selectDataFieldsImgCaption">
+                    <figure class="selectDataFieldsImgWrapper">
+                        <input type="checkbox" class="selectDataFieldsImgCheckbox"
+                            id="selectDataFieldsImgCheckBoxThree">
+                        <img src="../assets/SelectDataFieldsImg3.png" alt="SelectDataFieldsImg3"
+                            class="selectDataFieldsImg">
+                    </figure>
+                    <figcaption class="selectDataFieldsImgCaptionTxt">Social Media Followers</figcaption>
+                </div>
+
+                <div class="selectDataFieldsImgCaption">
+                    <figure class="selectDataFieldsImgWrapper">
+                        <input type="checkbox" class="selectDataFieldsImgCheckbox" id="selectDataFieldsImgCheckBoxFour">
+                        <img src="../assets/SelectDataFieldsImg4.png" alt="SelectDataFieldsImg4"
+                            class="selectDataFieldsImg">
+                    </figure>
+                    <figcaption class="selectDataFieldsImgCaptionTxt">Leads and Sales</figcaption>
+                </div>
+
+                <div class="selectDataFieldsImgCaption">
+                    <figure class="selectDataFieldsImgWrapper">
+                        <input type="checkbox" class="selectDataFieldsImgCheckbox" id="selectDataFieldsImgCheckBoxFive">
+                        <img src="../assets/SelectDataFieldsImg5.png" alt="SelectDataFieldsImg5"
+                            class="selectDataFieldsImg">
+                    </figure>
+                    <figcaption class="selectDataFieldsImgCaptionTxt">Brand Awareness</figcaption>
+                </div>
+
+                <div class="selectDataFieldsImgCaption">
+                    <figure class="selectDataFieldsImgWrapper">
+                        <input type="checkbox" class="selectDataFieldsImgCheckbox" id="selectDataFieldsImgCheckBoxSix">
+                        <img src="../assets/SelectDataFieldsImg6.png" alt="SelectDataFieldsImg6"
+                            class="selectDataFieldsImg">
+                    </figure>
+                    <figcaption class="selectDataFieldsImgCaptionTxt">Analytics + LeaderBoard</figcaption>
+                </div>
+            </div>
+
+            <div class="selectDataFieldsBtnWrapper">
+                <button class="showPreviousStepOneBtn" onclick="showPreviousStepOneHandler()">Go Back</button>
+                <button class="selectDataFieldsBtn" onclick="showCampaignStepThreeHandler()">Next</button>
+            </div>
+
+        </div>
+
+        <div class="createCampaignStepThreeRightWrapper" id="createCampaignStepThreeWrapper">
+            <h1 class="selectCampaignDurationHeading">Select Duration of Campaign</h1>
+
+            <form class="selectTimeForm">
+                <label for="selectTime" class="selectTimeHeading">Pick a time</label>
+
+                <select class="showTimeSlotsWrapper">
+                    <option value="12PM">12:00</option>
+                    <option value="1PM">1:00</option>
+                    <option value="2PM">2:00</option>
+                    <option value="3PM">3:00</option>
+                    <option value="4PM">4:00</option>
+                </select>
+
+
+                <div class="selectCampaignDurationCalendarWrapper">
+
+                    <header class="calendarMonthYearHeader">
+
+                        <h6 class="calendarCurrentDate" id="calendarMonthYear"></h6>
+
+                        <div class="calendarPrevNextMonthIcons">
+                            <img src="../assets/CampaignDurationPrevMonthYearIcon.png"
+                                alt="CampaignDurationPrevMonthYearIcon" class="calendarPrevMonthYearIcon"
+                                id="calendarPrevMonthYearIcon">
+
+                            <img src="../assets/CampaignDurationNextMonthYearIcon.png"
+                                alt="CampaignDurationNextMonthYearIcon" class="calendarNextMonthYearIcon"
+                                id="calendarNextMonthYearIcon">
+                        </div>
+
+                    </header>
+
+                    <div class="calendarDaysDatesWrapper">
+                        <ul class="weekdaysWrapper">
+                            <li class="weekday">Sun</li>
+                            <li class="weekday">Mon</li>
+                            <li class="weekday">Tue</li>
+                            <li class="weekday">Wed</li>
+                            <li class="weekday">Thu</li>
+                            <li class="weekday">Fri</li>
+                            <li class="weekday">Sat</li>
+                        </ul>
+
+                        <ul class="datesWrapper" id="calendarDates"></ul>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="selectCampaignDurationBtnWrapper">
+                <button class="showPreviousStepTwoBtn" onclick="showPreviousStepTwoHandler()">Go Back</button>
+                <button class="selectCampaignDurationBtn" onclick="showCampaignStepFourHandler()">Next</button>
+            </div>
+        </div>
+
+        <div class="createCampaignStepFourRightWrapper" id="createCampaignStepFourWrapper">
+            <h1 class="addContactDetailsHeading">Contact Details</h1>
+
+            <div class="contactDetailsWrapper">
+                <form class="addContactDetailsForm">
+                    <lable for="clientName" class="addContactDetailsLable1">Name</lable>
+                    <input type="text" id="clientName" class="addContactDetailsInput1" required>
+
+                    <lable for="clientMobNo" class="addContactDetailsLable2">Contact No.</lable>
+                    <input type="tel" id="clientMobNo" class="addContactDetailsInput2" required>
+
+                    <lable for="campaignDetails" class="addContactDetailsLable3">Purpose of campaign
+                    </lable>
+                    <textarea id="campaignDetails" class="addContactDetailsTxtArea" cols="30" rows="5"></textarea>
+                </form>
+
+                <img src="../assets/CreateCampaignStepFourImg.png" alt="Contact Details"
+                    class="createCampaignStepFourImg">
+            </div>
+
+            <div class="selectCampaignContactDetailsBtnWrapper">
+                <button class="showPreviousStepThreeBtn" onclick="showPreviousStepThreeHandler()">Go Back</button>
+                <button class="selectCampaignContactDetailsBtn"
+                    onclick="navigateStepsCompletedPageHandler()">Send
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="indexPageFooter">
+
+        <figure class="footerLogoWrapper">
+            <img src="../assets/footerLogo.png" alt="" class="indexPageFooterLogo">
+        </figure>
+
+        <div class="footerSocialMediaLinksDiv">
+
+            <div class="socialMediaHandlesWrapper">
+
+                <img src="../assets/FooterIcon1.png" alt="footerSocialMediaIcon" class="footerSocialMediaIcon">
+
+                <span class="footerSocialMediaHandle1"> contact@vistaardigital.com </span>
+
+            </div>
+
+            <div class="socialMediaHandlesWrapper">
+
+                <img src="../assets/FooterIcon2.png" alt="footerSocialMediaIcon" class="footerSocialMediaIcon">
+
+                <span class="footerSocialMediaHandle2"> vistaardigital
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footerAddressWrapper">
+            <img src="../assets/FooterIcon3.png" alt="footerLocationIcon" class="footerLocationIcon">
+
+            <address class="footerAddress">Paras Business Center, Unit 602, Kasturbha Cross Rd Number 1, Near Kasturbha
+                Police Station, Borivali East, Mumbai 400066, MH, India.</address>
+        </div>
+
+    </footer>
+
+    <footer class="footerCopyrightBottomWrapper">
+
+        <span class="footerCopyrightText">2018 &#169; Copyright Vistaar Digital. All Rights reserved. Platform By
+            Vistaar
+            Digital</span>
+    </footer>
+
+
+    <script src="../JS/index.js"></script>
+
+    <script src="https://kit.fontawesome.com/4fe15b38ca.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

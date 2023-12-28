@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.campaginDetailsAddedWrapper {
+    height: max-content;
+    width: 100%;
+    background-color: #4700FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+.campaginDetailsAddedHeading {
+    font-family: 'Poppins', "sans-serif";
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    letter-spacing: 0.5mm;
+}
+
+.campaginDetailsAddedImg {
+    height: 30rem;
+    width: 30rem;
+}
+
+.showIndexPageBtn {
+    height: max-content;
+    width: max-content;
+    margin-top: 3rem;
+    font-family: 'Roboto', "sans-serif";
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #fff;
+    color: #4700FF;
+    text-transform: uppercase;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 0.3mm;
+}
